@@ -53,7 +53,7 @@ Explanation: No pairs can be formed, and there is 1 number leftover in nums.
             {                            //Now checking for the duplicate and if we have found one then changing
                 nums[i] = -1;            //their values out of the range of nums[i]
                 nums[i - 1] = -1;        //so that they cannot be used again for pairing
-                pairs++; //Increasing the pair count
+                pairs++;//Increasing the pair count
             }
         }
 
@@ -71,12 +71,11 @@ Explanation: No pairs can be formed, and there is 1 number leftover in nums.
 
         List<Integer> asist=new ArrayList<>();
 
-        asist.add(pairs);
-        asist.add(count);
+        asist.add(pairs);  //The number of pairs and the number of single numbers in the array
+        asist.add(count); //are added into a new list.
 
         System.out.println("we have "+pairs+" pairs"+" and "+" we have "+count+ " leftovers:  "+asist);
 
-        System.out.println("hello");
 
 
 
