@@ -76,6 +76,8 @@ Explanation: No pairs can be formed, and there is 1 number leftover in nums.
 
         System.out.println("we have "+pairs+" pairs"+" and "+" we have "+count+ " leftovers:  "+asist);
 
+        System.out.println("hello");
+
 
 
 
