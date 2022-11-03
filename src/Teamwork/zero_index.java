@@ -68,13 +68,12 @@ Explanation: No pairs can be formed, and there is 1 number leftover in nums.
 
         }
 
-
         List<Integer> asist=new ArrayList<>();
 
         asist.add(pairs);
         asist.add(count);
 
-        System.out.println(asist);
+        System.out.println("we have "+pairs+" pairs"+" and "+" we have "+count+ " leftovers:  "+asist);
 
 
 
