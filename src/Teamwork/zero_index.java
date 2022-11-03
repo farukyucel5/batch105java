@@ -49,10 +49,11 @@ Explanation: No pairs can be formed, and there is 1 number leftover in nums.
 
         int pairs = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (i > 0 && nums[i]==nums[i - 1]){//Now checking for the duplicate and if we have found one then changing their values out of the range of nums[i] so that they cannot be used again for pairing
-                nums[i] = -1;
-                nums[i - 1] = -1;
-                pairs++;//Increasing the pair count
+            if (i > 0 && nums[i]==nums[i - 1])
+            {                            //Now checking for the duplicate and if we have found one then changing
+                nums[i] = -1;            //their values out of the range of nums[i]
+                nums[i - 1] = -1;        //so that they cannot be used again for pairing
+                pairs++; //Increasing the pair count
             }
         }
 
@@ -63,7 +64,7 @@ Explanation: No pairs can be formed, and there is 1 number leftover in nums.
         for (int num : nums)
         {
             if (num != -1) {
-                count++;//array'in içinde kalan çifti olmayan sayıların sayısı.
+                count++;//it counts the number of single numbers
             }
 
         }
