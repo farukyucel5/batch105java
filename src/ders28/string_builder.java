@@ -38,5 +38,7 @@ public class string_builder {
 
         System.out.println(sb.capacity());//27
         System.out.println(sb.length());//27
+        
+        
     }
 }
