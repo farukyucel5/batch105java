@@ -23,33 +23,40 @@ public class Pascal_Triangle {
         int numrow=obj.nextInt();
 
         List<List> pascal=new ArrayList<>();
-        pascal.add(0, List.of(1));
-        pascal.add(1,List.of(1,1));
 
-        System.out.println(pascal);
-
-        List<Integer> sublist=new ArrayList<>();
-
-
-        for (int i =3; i <numrow; i++)
+        if (numrow>2)
         {
-            sublist.add(0,1);
-            for (int j = 0; j < i; j++)
-            {
+          pascal.add(0, List.of(1));
+          pascal.add(1,List.of(1,1));
 
-                sublist.add((int) pascal.get(j+1).get(j+1)+(int) pascal.get(j+1).get(j));
+          for (int i = 1; i < numrow - 1; i++) {
+              List<Integer> sublist = new ArrayList<>();
 
-                System.out.println(sublist);
+              sublist.add(1);
 
-            }
-            sublist.add(1);
+              for (int j = 0; j < i; j++) {
+
+                  sublist.add((int) pascal.get(i).get(j + 1) + (int) pascal.get(i).get(j));
+              }
+
+              sublist.add(1);
+              pascal.add(sublist);
+              System.out.println(pascal);
+          }
+
+        } else if (numrow==2) {
+          pascal.add(0, List.of(1));
+          pascal.add(1,List.of(1,1));
+            System.out.println(pascal);
+      } else if (numrow==1) {
+          pascal.add(0, List.of(1));
+            System.out.println(pascal);
+      } else {
+            System.out.println("That's an invalid row number, please enter a number greater than 0 !");
         }
 
 
 
-        pascal.add(sublist);
-
-        System.out.println(pascal);
 
 
 
