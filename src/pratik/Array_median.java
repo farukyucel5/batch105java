@@ -11,8 +11,7 @@ public class Array_median {
 
         int[] sonuc = new int [A1.length + A2.length];
 
-        for (int i=0; i<A1.length + A2.length; i++)
-        {
+        for (int i=0; i<A1.length + A2.length; i++) {
             if (i<A1.length)
                 sonuc[i]=A1[i];
             else
@@ -22,23 +21,13 @@ public class Array_median {
         Arrays.sort(sonuc);
         int median;
 
-
-               if ((sonuc.length)%2==1)
-               {
-                   median=sonuc[(sonuc.length)/2];
-                   System.out.println(median);
-               }
-               else
-               {
+        if ((sonuc.length)%2==1) {
+                median=sonuc[(sonuc.length)/2];
+                System.out.println(median);
+        } else {
                    median=(sonuc[sonuc.length/2]+sonuc[(sonuc.length/2)-1])/2;
                    System.out.println(median);
                }
-
-
-
-        System.out.println(Arrays.toString(sonuc));
-
-
-
+               System.out.println(Arrays.toString(sonuc));
     }
 }
