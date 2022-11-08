@@ -30,6 +30,20 @@ public class string_builder_access_modifier {
         System.out.println(sb1.compareTo(sb2));
 
 
+        StringBuilder sb=new StringBuilder(5+7+"java"+4+5);
+        String isim="Mesut";
+        sb.append(isim,2,4);
+        sb.delete(4,6);
+        System.out.println(sb);
+
+        StringBuilder sb4=new StringBuilder("OCAJP8");
+        sb4.subSequence(2,4);
+        sb4.deleteCharAt(3);
+        sb4.reverse();
+        System.out.println(sb4);
+
+
+
 
 
     }
