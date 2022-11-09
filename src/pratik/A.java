@@ -3,6 +3,7 @@ package pratik;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class A {
     /*
@@ -13,7 +14,7 @@ kismini list olarak bize donduren bir method olusturun
         Soru 3- Verilen String bir listede istenmeyen harf iceren elementleri silip, kalan
 kismini list olarak bize donduren bir method olusturun
          */
-    public static void main(String[] args) {
+      public static void main(String[] args) {
         List<String> liste=new ArrayList<>();
         liste.add("ali");
         liste.add("veli");
@@ -39,4 +40,5 @@ kismini list olarak bize donduren bir method olusturun
 
         return newlist;
     }
+
 }
