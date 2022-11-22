@@ -1,3 +1,1 @@
-
-
-java gittikce guzellesiyor
+java is the most commonly used programming language all over the world.
