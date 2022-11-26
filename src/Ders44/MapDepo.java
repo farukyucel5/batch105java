@@ -116,4 +116,6 @@ public class MapDepo {
         return isimListesi;
     }
 
+
+
 }
