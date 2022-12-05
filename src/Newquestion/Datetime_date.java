@@ -8,12 +8,21 @@ public class Datetime_date {
 
     public static void main(String[] args) {
 
-        Scanner scan=new Scanner(System.in);
-        System.out.println("Please pass in your date of birth in year-month-day format.");
-        LocalDate birthDate= LocalDate.parse(scan.nextLine());
+        LocalDate birthDate= null;
+        try {
+            Scanner scan=new Scanner(System.in);
+            System.out.println("Please pass in your date of birth in year-month-day format.");
+            birthDate = LocalDate.parse(scan.nextLine());
+        } catch (Exception e) {
+            System.out.println("Please enter in an apt format ");
+        }
         LocalDate currentDate=LocalDate.now();
 
-        age(currentDate,birthDate);
+        if(birthDate.isBefore(currentDate))
+            age(currentDate,birthDate);
+        else if (birthDate.isAfter(currentDate))
+            System.out.println("you can't be born in the future");
+
     }
 
     private static void age(LocalDate currentDate, LocalDate birthDate) {
